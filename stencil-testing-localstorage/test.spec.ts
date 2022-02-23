@@ -1,13 +1,5 @@
 // WHEN TO USE: When trying to test functionality related to localStorage or sessionStorage
-// IMPORTANT PARTS:
-// flushQueue: true -
-// put your storage actions inbetween
-// await page.waitForChanges(); - then everything will be executed.
 
-/**
- * Need to rerender the page several times with different configs
- * @returns new stencil spec page
- */
 function renderPage(options = {}) {
   return newSpecPage({
     components: [MyComponent],

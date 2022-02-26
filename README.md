@@ -6,3 +6,7 @@ My personal useful snippets from coding and testing. I've removed all the work r
 
 Stencil sucks! SpecPage creates mock objects for window, navigator, localStorage and so on.
 To see how to mock stuff inside before lifecycle hooks are executed, look at the stencil-testing folder.
+
+## Vue-Testing
+
+Vue is much better. Many things work as expected. I'll record some things anyway because I might want to look them up again.

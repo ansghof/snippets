@@ -2,6 +2,7 @@
 import { mount } from "@vue/test-utils";
 import flushPromises from "flush-promises";
 
+// userAgent is a readonly property of navigator so this way can be used to mock other readonly properties as well
 jest
   .spyOn(window.navigator, "userAgent", "get")
   .mockReturnValueOnce(

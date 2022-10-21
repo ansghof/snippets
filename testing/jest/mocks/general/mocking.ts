@@ -27,3 +27,14 @@ it("should make getConfigMock return config", async () => {
   getConfigMock.mockResolvedValueOnce(config);
   // confinue with test
 });
+
+// 3. as jest.mock with factory
+const mockMyFunction = jest.fn();
+jest.mock('@ansghof/my-service', () => ({
+  myFunction: () => mockMyFunction,
+}));
+
+it("should make getConfigMock return config", async () => {
+  mockMyFunction.mockResolvedValueOnce(result);
+  // confinue with test
+});

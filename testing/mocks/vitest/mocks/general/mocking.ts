@@ -4,7 +4,7 @@ afterEach(() => {
 });
 
 it('should do ...', async () => {
-    const nameSpy = vi.spyOn(portalService, 'getName');
+    const nameSpy = vi.spyOn(myService, 'getName');
     nameSpy.mockResolvedValueOnce(mockUsername);
 
     const wrapper = mount(MyComponent, {
